@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>53284d07-b263-4aff-8fe1-066f59160e00</ProjectGuid>
+    <RootNamespace>HP_3311A_CAL</RootNamespace>
+    <AssemblyName>HP 3311A CAL</AssemblyName>
+    <Name>HP 3311A CAL</Name>
+    <InstrumentLine1>HP 3312A Function Generator</InstrumentLine1>
+    <PublishFileName>HP 3311A CAL</PublishFileName>
+    <PackageDate>2021-07-09</PackageDate>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.mc">
+      <MainProcedure>True</MainProcedure>
+    </Compile>
+    <Compile Include="Sub Preamble.mc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="linearity.aliases" />
+    <Content Include="linearity.exe" />
+    <Content Include="linearity.ini" />
+    <Content Include="THD.aliases" />
+    <Content Include="THD.exe" />
+    <Content Include="THD.ini" />
+  </ItemGroup>
+</Project>
